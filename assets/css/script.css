@@ -1,0 +1,164 @@
+#chatBoard{
+    border: 1px solid gray;
+    height: 200px;
+    width: 570px;
+    overflow-y: scroll;
+}
+
+#inputArea {
+    display: flex;
+    
+}
+
+
+input[type="text"]{
+    height: 30px;
+    width: 250px;
+    margin-right: 50px;
+    border: 1px solid rgb(221, 218, 218);
+    margin: 1em;
+    padding-left: 1em;
+    outline: none;
+    border-radius: 50px;
+}
+
+
+#chatbotPost{
+    background-color: rgb(83, 83, 141);
+    display: inline-block;
+    border-radius: 0 .5em .5em .5em;
+
+}
+#customerPost{
+    display: inline-block;
+    margin-right: 0;
+    background-color: rgb(228, 124, 6);
+
+}
+
+#chatbotPost, #customerPost{
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+#chatbotBtn, #customerBtn{
+    padding: .5em;
+    margin: 0.5em;
+    margin-left: 5em;
+    font-size: 1em;
+    border-radius: .8em;
+    cursor: pointer;
+}
+
+#chatbotBtn{
+background-color: rgb(216, 215, 215);
+color: white;
+border: none;
+}
+
+#customerBtn{
+background-color: rgb(216, 215, 215);
+color: white;
+border: none;
+}
+
+
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: #4286f4;
+    box-shadow: 0 4px 3px #a8b2c1;
+  }
+  
+  #header>h1 {
+    margin: 0px auto;
+    width: 1024px;
+    color: white;
+    padding: 10px;
+  }
+  
+  #container {
+    padding: 12px;
+    width: 1004px;
+    height: 500px;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: 4px 4px 2px #a8b2c1;
+    position: relative;
+    overflow: scroll;
+  }
+  
+  #controls {
+  
+    width: 1024px;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 4px 4px 2px #a8b2c1;
+  }
+  
+  textarea {
+    resize: none;
+    width: 920px;
+    float: left;
+    height: 46px;
+    font-family: cursive;
+    padding: 6px;
+    box-shadow: 4px 4px 2px #a8b2c1;
+    border: 0px;
+    font-size: 16px;
+  }
+  
+  #send {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0px 12px;
+    position: absolute;
+    float: right;
+    box-shadow: 4px 4px 2px #a8b2c1;
+  }
+  
+  input[type="checkbox"]:after,
+  .checkbox-inline input[type="checkbox"]:after {
+    border: 1px solid;
+    border-radius: 1px;
+    content: '';
+    display: block;
+    height: 12px;
+    transition: 240ms;
+    width: 12px;
+    background-color: white;
+    border-color: #008CBA
+  }
+  
+  input[type="checkbox"]:checked:after {
+    background-color: #008CBA;
+    border-color: #008CBA;
+  }
+  
+  label,
+  input[type="checkbox"] {
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    margin: 4px 4px 12px;
+  }
+  
+  .username {
+    color: #008CBA;
+    font-weight: bold;
+  }
+  
+  .bot {
+    color: #49b25c;
+    font-weight: bold;
+  }
+
+
+
+
+

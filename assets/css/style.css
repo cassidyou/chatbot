@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1,h3{
+    padding: 50px;
+    padding-left: 100px;
+}
+#wrapper{
+    position: fixed;
+    right: 20px;
+    width: 360px;
+    top: 20px;
+    border-radius: 10px  10px 0 0;
+    overflow-x: hidden;
+    z-index: 1000;  
+    background-color: white;
+    display: none;
+}
+
+#wrapper header{
+display: flex;
+background-color:  rgb(10, 43, 105);
+padding: 5px;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+z-index: 1002;
+}
+
+#wrapper header img{
+    width: 30px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0;
+    margin-right: 10px;
+    background-color: transparent;
+   
+}
+
+#wrapper main img{
+    width: 20px;
+    padding: 5px 5px;
+    background-color: rgb(10, 43, 105);
+    margin-right: 3px;
+    border-radius: 50px;
+}
+
+#userPost img{
+    border: 1px solid #2381d8;
+    background-color: #2381d8;
+}
+
+#chatbotPost img{
+    background-color: rgb(10, 43, 105);
+    border: 2px solid rgb(10, 43, 105);
+}
+
+#indicator{
+    width: 7px;
+    height: 7px;
+    background-color: rgb(14, 189, 14);
+    display: inline-block;
+    border-radius: 60px;
+    border: 1px solid whitesmoke;
+}
+
+#status{
+    display: flex;
+}
+
+#online span{
+    font-size: 1.1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: beige;
+}
+#online div{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+
+#times{
+    font-size: 2em;
+    cursor: pointer;
+    color: beige;
+}
+
+
+
+/* Main section */
+#wrapper main{
+    padding: 15px;
+    border: 1px solid rgb(218, 213, 213);
+    height: 300px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1000!important;
+}
+
+#wrapper main .post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 1000px;
+}
+
+#wrapper .chat{
+    padding: 10px; 
+    margin: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.09);
+}
+
+#chatbotPost{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#chatbotPost .chat, #services{
+    border-radius: 0 15px 15px 15px;
+    border: 1px solid rgb(10, 43, 105);
+}
+
+#services{
+    text-align: center;
+    padding: 6px;
+    margin: 5px 0;
+    width: 255px;
+    margin-left: 45px;
+}
+#userPost .chat{
+    border-radius: 15px 0  15px 15px;
+    background-color: #2381d8; 
+    color: white;  
+}
+
+#userPost{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+
+
+
+.chat .time{
+   color: black;
+   font-style: italic;
+   font-size: .9em;
+   margin-left: 150px;
+}
+
+
+#ceoImg{
+    width: 100px!important;
+    border-radius: 50%;
+    border: none!important;
+    background-color: transparent!important;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*Footer section */
+
+#wrapper footer{
+    padding: 10px;
+    border: 1px solid rgb(218, 213, 213);
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    z-index: 1200;
+
+}
+
+#wrapper footer #userInput{
+    height: 30px;
+    width: 290px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    font-weight: normal;
+   
+}
+
+#wrapper footer #userInput::placeholder{
+    color: rgb(204, 202, 202);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#wrapper footer div button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+span.servicesBtn{
+    color: black;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+#aiBtn{
+    display: none;
+}
+
+.servicesLink{
+    border: 1px solid #2381d8;
+    text-decoration: none!important;
+}
+
+
+
+#chatbotBtn{
+    position: fixed;
+    top: 470px;
+    right: 50px;
+    background: transparent;
+}
+
+#chatbotBtn img{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+  
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(25, 25, 145); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(25, 25, 145); 
+  }
+
+  span.userTime, span.chatbotTime{
+      display: block;
+      padding-top: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-size: 12px;
+      text-align: end;
+  }
+
+
+  @media screen and (max-width: 425px) {
+    #wrapper{
+        right: 2px;
+        width: calc(100vw - 5px);
+        top: 0;
+    }
+    #wrapper main{
+        height: 70vh !important;
+    }
+    #services{
+        padding: 6px;
+        margin: 5px 0;
+        width: auto!important;
+    }
+  }
+
+
+
+
