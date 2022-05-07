@@ -64,6 +64,7 @@ function displayTime(){
     var minute = today.getMinutes();
     minute = (minute <= 9)? "0" + minute : minute;
     var hour = today.getHours();
+    if(hour == 00){hour = 12}
     hour = (hour <= 12)? hour : hour - 12;
     var ampm = (h <= 11) ? "AM" : "PM";
     
