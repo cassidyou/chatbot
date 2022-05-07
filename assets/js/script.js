@@ -122,7 +122,7 @@ $(function(){
         var message = $("#userInput").val();
         $("#userInput").val("");
        
-        user(message); 
+        if(message.trim() != ''){user(message)}; 
         
               
 
@@ -147,6 +147,8 @@ $(function(){
         let reply = $("#userInput").val().toLowerCase();
         $("#userInput").val("");
 
+        if(reply.trim() != ''){
+            
         if(reply.includes("website") || reply.includes("web")){
             user(reply);
             chatBot("We develop and maintain responsive and secure websites and applications to drive your business and organization.");
@@ -185,6 +187,7 @@ $(function(){
             chatBot(" <br> Reply any of the following to learn more...");
        $("main").html($("main").html() + services.fullList);
             
+        }
         }
         //calling the displaytime function
         displayTime();

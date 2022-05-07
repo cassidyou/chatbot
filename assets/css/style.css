@@ -286,14 +286,20 @@ span.servicesBtn{
         top: 0;
     }
     #wrapper main{
-        height: 70vh !important;
+        height: 60vh !important;
     }
     #services{
         padding: 6px;
         margin: 5px 0;
         width: auto!important;
     }
+    #wrapper footer #userInput{
+        width: calc(100% - 50px); 
+    }
+   
   }
+
+
 
 
 
