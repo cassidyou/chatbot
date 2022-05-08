@@ -297,8 +297,9 @@ span.servicesBtn{
         width: calc(100% - 50px); 
     }
     #chatbotBtn{
-        top: 270px;
+        top: 380px;
         right: 10px;
+        background: transparent;
     }
     
     #chatbotBtn img{
