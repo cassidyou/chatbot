@@ -286,7 +286,7 @@ span.servicesBtn{
         top: 0;
     }
     #wrapper main{
-        height: 60vh !important;
+        height: 50vh !important;
     }
     #services{
         padding: 6px;
@@ -295,6 +295,15 @@ span.servicesBtn{
     }
     #wrapper footer #userInput{
         width: calc(100% - 50px); 
+    }
+    #chatbotBtn{
+        top: 350px;
+        right: 10px;
+    }
+    
+    #chatbotBtn img{
+        width: 80px;
+
     }
    
   }
