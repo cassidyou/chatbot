@@ -1,3 +1,22 @@
+//$(document).ready(function(){})
+$(function(){
+
+
+
+var servicesBtnContainer = $("<div id=services></div>");
+        let websiteBtn = $("<button id='website' class='servicesBtn'> Web Dev.</button>");
+        let graphicDBtn = $(" <button id='graphicD' class='servicesBtn'></button>").text("Graphic Design");
+        let mobAppBtn = $(" <button id='mobApp' class='servicesBtn'></button>").text("Mobile App Development");
+        let desktopAppBtn = $(" <button id='desktopAppDev' class='servicesBtn'></button>").text("Desktop App Development");
+        let team = $(" <p id='team'></p> ").text("Team of Experts");
+        let ceoBtn = $("<button id='sammy' class='servicesBtn'></button>").text("Samuel Omaka");
+        let internBtn = $(" <button id='cassidy' class='servicesBtn'>Oluchi Cassidy</button>").text("Oluchi Cassidy");
+
+    
+  
+        
+      
+       
 
 //This function appends the chatbot replies to the main tag
 function chatBot(message){
@@ -9,8 +28,7 @@ function chatBot(message){
             '<span class="chatbotTime"></span>' +
        '</div>' +
   '</div>'
-  
-return $("main").html(prevMessage + chatbotHtml);
+$("main").html(prevMessage + chatbotHtml);
 }
 
 
@@ -25,26 +43,13 @@ function user(message){
         '<img src="assets/img/usericon-removebg-preview.png" alt="">' +
     '</div>'
 
-    return $("main").html(prevMessage + userHtml);
+    $("main").html(prevMessage + userHtml);
 };
 
 
 
 
 const services = {
-
-    fullList : "<div id=services>"+
-                "<br><b>Services</b> <hr><span id='website' class='servicesBtn'> Web Dev.</span> " +
-                "<span id='graphicD' class='servicesBtn'>Graphic Design</span>" +
-                " <span id='mobApp' class='servicesBtn'>Mobile App Dev.</span>" +
-                "<span id='dsktopAppDev' class='servicesBtn'>Desktop App Dev.</span>" +
-                "<br><br><b>Team of Experts</b><hr> " +
-               "<span class='servicesBtn'>Samuel Omaka</span>" +
-               "<span class='servicesBtn'>Oluchi Cassidy</span>" +
-               "<span class='chatbotTime'></span>" +
-               "</div> <br>",
-               
-
     Ceo : '<div style="text-align:center"><img src="assets/img/ceo_tutapis.jpg"  id="ceoImg"></div>' +
             '<div style="text-align:center"><b>Omaka Samuel Dike</b> <br> <span>CEO Tutapis Technologies</span></div>' +
             '' +
@@ -74,6 +79,7 @@ function displayTime(){
 }
 
 
+
 //Introduces the chatbot and asks for users name
 function askName(){
     chatBot("Hi! my name is Zinny, your Virtual Assistance");
@@ -90,10 +96,6 @@ function welcomeMessage(message){
 }
 
 
-
-
-//$(document).ready(function(){})
-$(function(){
     $("#aiBtn").hide();
     askName();
     displayTime();
@@ -127,12 +129,18 @@ $(function(){
               
 
         welcomeMessage(message);
-        chatBot("Checkout the list of <b>services we offer at tutapis technologies</b>, and our <b>team of experts</b>. " + 
-        " <br> Reply any of the following to learn more...");
+        chatBot("<b>services at tutapis technologies</b></b>. ");
         displayTime();
-       $("main").html($("main").html() + services.fullList);
+       $("main").html($("main").html());
+       servicesBtnContainer.append(websiteBtn, graphicDBtn, mobAppBtn, desktopAppBtn, team, ceoBtn, internBtn);
+       $("main").html($("main").html() + servicesBtnContainer.html());
 
-
+ 
+  ///////////////////////////////////
+       //$("#website").click(function(){
+       // user("website");
+    //})
+    //////////////////////////////////
 
        $("#sendBtn").hide();
        $("#aiBtn").show().attr("disabled", "disabled");
@@ -141,11 +149,16 @@ $(function(){
     });
 
 
+ 
+
+
 //the function that replies the user base on his input
     $("#aiBtn").click(function(){
-        
+
+      
         let reply = $("#userInput").val().toLowerCase();
         $("#userInput").val("");
+
 
         if(reply.trim() != ''){
             
@@ -185,9 +198,10 @@ $(function(){
             chatBot("Invalid reply");
             displayTime();
             chatBot(" <br> Reply any of the following to learn more...");
-       $("main").html($("main").html() + services.fullList);
+       $("main").html($("main").html() + servicesBtnContainer.html());
             
         }
+        
         }
         //calling the displaytime function
         displayTime();
@@ -220,8 +234,7 @@ $(function(){
     
 //show the wrapper class and hide the chatbot icon on click
     $("#chatbotBtn").click(function(){
-        $("#wrapper").fadeIn(); 
-        $(this).hide();
+        $("#wrapper").toggle(); 
     })
 
 // close the wrapper class and show the chatbot icon on click
@@ -230,10 +243,38 @@ $(function(){
         $("#chatbotBtn").fadeIn();
     })
   
+    //send reply when the enter keyboard is pressed
+$("#userInput").keyup(function(e){
+    if(e.key == "Enter"){
+       if ($("#userInput").attr("placeholder").includes("name")){
+        $("#sendBtn").click();
+        }
+        
+       if ($("#userInput").attr("placeholder").includes("reply")){
+        $("#aiBtn").click();
+        }
+        
+       
+    }
+
+ })
 
 
 
-    
+
+
+ 
+
+
+
+
+       
+
+
+
+
+
+
 })
 
 
