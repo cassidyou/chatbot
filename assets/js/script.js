@@ -1,7 +1,7 @@
 //$(document).ready(function(){})
 $(function(){
 
-
+    window. addEventListener("load",function() { setTimeout(function(){  window. scrollTo(0, 1); }, 0); });
 
 var servicesBtnContainer = $("<div id=services></div>");
         let websiteBtn = $("<button id='website' class='servicesBtn'> Web Dev.</button>");
@@ -269,7 +269,7 @@ $("#userInput").keyup(function(e){
 
 
 
-       
+ 
 
 
 
@@ -277,6 +277,13 @@ $("#userInput").keyup(function(e){
 
 
 })
+
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
 
 
 
