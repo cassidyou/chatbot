@@ -292,12 +292,13 @@ z-index: 1002;
     #wrapper{
         right: 2px;
         width: calc(100vw - 5px);
-        top: 0;
-        margin-bottom: 5px;
-        max-height: 100vh;
+        top: 1px!important;
+        bottom: 5px;
+        height: 100vh;
+        
     }
     #wrapper main{
-        height: 70vh !important;
+        height: calc(100vh - 30vh);
     }
     #services{
         padding: 6px;
