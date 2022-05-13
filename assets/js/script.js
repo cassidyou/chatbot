@@ -12,6 +12,10 @@ var servicesBtnContainer = $("<div id=services></div>");
         let ceoBtn = $("<button id='sammy' class='servicesBtn'></button>").text("Samuel Omaka");
         let internBtn = $(" <button id='cassidy' class='servicesBtn'>Oluchi Cassidy</button>").text("Oluchi Cassidy");
 
+        if(screen.availWidth <= 425){
+           $("#wrapper").height(screen.availHeight);
+         
+        }
     
 
         
