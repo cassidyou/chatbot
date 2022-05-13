@@ -6,62 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chatBot</title>
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   
     <script src="assets/js/jQuery 3.6.0.js"></script>
+
+     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <div id="topic">
-        <h1>Jquery Chatbot Project</h1>
-        <h3>Click on the icon at the bottom right corner to explore chatbot</h3>
-    </div>
-  
-
-
-    <div id="wrapper">
-        <!--Header section-->
-        <header>
-            <div id="status">
-                <img src="assets/img/ai_chatbot-removebg-preview-removebg-preview (1).png" alt="">
-                <div id="online">
-                    <span>ChatBot</span>
-                    <div><span id="indicator"></span> Online</div>
+    
+        <div id="topic">
+            <h1>Jquery Chatbot Project</h1>
+            <h3>Click on the icon at the bottom right corner to explore chatbot</h3>
+        </div>
+      
+    
+    
+        <div id="wrapper">
+            <div class="container">
+            <!--Header section-->
+            <header>
+                <div id="status">
+                    <img src="assets/img/ai_chatbot-removebg-preview-removebg-preview (1).png" alt="">
+                    <div id="online">
+                        <span>ChatBot</span>
+                        <div><span id="indicator"></span> Online</div>
+                    </div>
                 </div>
+               <span id="times">&times;</span>
+            </header>
+    
+            <!--body section-->
+            <main>
+             
+            </main>
+           
+            <!--Footer section-->
+            <footer>
+                <div>
+                    <input type="text" id="userInput" placeholder="Enter your name here.....">                 
+                    <button id="sendBtn" disabled><i class="fas fa-paper-plane"></i></button>
+                    <button id="aiBtn" disabled><i class="fas fa-paper-plane"></i></button>
+                </div>
+              
+            </footer>
             </div>
-           <span id="times">&times;</span>
-        </header>
-
-        <!--body section-->
-        <main>
-         
-        </main>
-       
-
-        <!--Footer section-->
-        <footer>
-            <div>
-                <input type="text" id="userInput" placeholder="Enter your name here.....">                 
-                <button id="sendBtn" disabled><i class="fas fa-paper-plane"></i></button>
-                <button id="aiBtn" disabled><i class="fas fa-paper-plane"></i></button>
-            </div>
-          
-        </footer>
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+ 
+    
     <div id="chatbotBtn">
         <img src="assets/img/chatbot_icon_blur.png" alt="">
     </div>
-
-
-
-
-
-
-
-
-
-
-    <script src="assets/js/script.js"></script>
+    
     <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   
 </body>
 </html>

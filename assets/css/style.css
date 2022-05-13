@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
     position: relative;
     height: 100vh;
 }
@@ -40,6 +40,7 @@ z-index: 1002;
     margin: 0;
     margin-right: 10px;
     background-color: transparent;
+    height: auto!important;
    
 }
 
@@ -300,7 +301,7 @@ z-index: 1002;
         
     }
     #wrapper main{
-        height: calc(100vh - 150px)!important;
+        height: calc(100vh - 140px)!important;
    
     }
 
